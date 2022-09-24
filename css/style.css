@@ -128,44 +128,44 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
+@media (max-width: 1150px){
+    .container{
+        width: 100%;
+    }
+    
+} 
+
 /* Soluzione tablet */
 
 @media (max-width: 768px){
     .container{
         width: 100%;
     }
-
-    .steps.text-center{
-        width: 900px;
-    }
 }
 
 /* soluzione smartphone*/
 
 @media (max-width: 480px){
-    .row{
+    .row {
+        display: flex;
         flex-direction: column;
         text-align: center;
     }
 
-    .lessons .col, .steps .col{
-        width: 90%;
+    .lessons .col,
+    .steps .col,
+    .row .col-left,
+    .row .col-right{
+        width: 100%;
+    }
+
+    .card{
         margin-bottom: 70px;
     }
 
-    .why-us .col-left{
-        width: 100%;
-        margin-bottom: 50px;
+    .why-us{
+        background-color: black;
     }
+}    
 
-    .why-us .col-right{
-        width: 100%;
-    }
-
-    .row .col{
-        width: 100%;
-    }
-
-    
-}
 
